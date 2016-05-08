@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.move21.prettylogger">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--android:process=":log_collect"-->
+    <application>
+        <service
+            android:name="com.peng.logger.service.LogCollectService"
+            android:process=":log_collect"
+             />
+
+        <activity
+            android:launchMode="singleTop"
+            android:name="com.peng.logger.ui.LogCollectActivity"
+            android:taskAffinity="com.move21.prettylogger"
+            android:process=":log_collect"
+            />
+    </application>
+</manifest>
