@@ -34,5 +34,5 @@ publish {
     artifactId = 'prettylogger'//项目名称
     publishVersion = '1.0.0'//版本号
     desc = 'Oh hi, this is a nice description for a project, right?'
-    website = ''
+    website = 'https://github.com/pengyuantao/prettylogger'
 }
